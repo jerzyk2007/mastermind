@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to left, #d16ba5, #ef6d8b, #fe7a6c, #fb914d, #e8ad33, #e7a32d, #e59828, #e38e26, #e45a47, #c8336a, #8e2e84, #313589);
+}
+
+.playerBoard, .gameBoardInfo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items:flex-start;
+    background: linear-gradient(#605ca9, #4758a3);
+} 
+.gameBoardInfo {
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+ .h1Title {
+background-image: linear-gradient(to right top, #4c74b1, #009cd6, #00c0c7, #00dc85, #a8eb12);
+color: #6f0a0a;
+letter-spacing: 5px;
+border: none;
+}
+
+
+
+.boxPlayer {
+    border: 2px solid rgb(142, 127, 12);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.playerChoice {
+    flex-basis: 90%;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.playerChoiceGameBoardInfo{
+    width: 240px;
+height: 50px;
+border: 2px solid black;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+span.player, .playerGameBoardInfo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.spanGameBoardInfo {
+    font-size: 18px;
+    color:#00dc85;
+    text-align: justify;
+    padding: 10px;
+}
+
+span.result {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 1px;
+    border: 2px solid black;
+}
+
+.wrapDivBtn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /*    align-items: flex-end;*/
+}
+.wrapButtons {
+    /* width: 100px; */
+display: flex;
+justify-content: space-between;
+/* align-items:flex-end; */
+}
+
+.btnGameBoardInfo {
+    height: 50px;
+    width: 80px;
+    border-radius: 10%;
+    font-size: 18px;
+    background-color: #53ebeb;   
+    margin: 0 2px;
+}
+
+.gameLevel {
+    background-color: gray;
+}
+
+.buttonStart,
+.buttonReset {
+    width: 100%;
+    border-radius: 10%;
+    font-size: 18px;
+    background-color: #53ebeb;
+}
+.buttonReset {
+    background-color: #d4d4d4;
+
+}
+
+.boxResult {
+    flex-basis: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxResultGameBoardInfo {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.resultGameBoardInfo {
+width: 20px;
+height: 20px;
+border: 2px solid black;
+border-radius: 50%;
+}
+.resultGameBoardInfo:nth-child(1) {
+    background-color: black;
+}.resultGameBoardInfo:nth-child(2) {
+    background-color: gray;
+}
+.checkMove {
+    height: 100%;
+    width: 70px;
+    border-color: #a8eb12;
+    background-color: transparent;
+    font-size: 25px;
+    color:#ebcb12;
+   }
+
+   @media screen and (min-width: 320px) and (max-width: 720px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+    
+    }
+  }
